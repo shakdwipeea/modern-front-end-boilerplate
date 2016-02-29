@@ -14,7 +14,7 @@ const rootElement = document.getElementById('app')
 
 match({ history: browserHistory, routes: routes },
   (error, redirectLocation, renderProps) => {
-  console.log(error, redirectLocation, renderProps);
+  console.log(error, redirectLocation, renderProps, routes);
   render(
     <Provider store={store}>
      <Router {...renderProps} />
